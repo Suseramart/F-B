@@ -1,0 +1,37 @@
+.footer {
+    text-align: center;
+}
+
+.footer__container {
+    max-width: 100%;
+    padding: 0;
+}
+
+.footer__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: var(--background-shade);
+
+}
+
+.footer__item {}
+
+.footer__link {}
+
+.footer__icon {
+    width: 20px;
+    height: 20px;
+}
+
+.footer__icon:hover {
+    background-color: aqua;
+    transition: all;
+    border-radius: 17%;
+}
+
+.footer__copyright {
+    line-height: 200%;
+}

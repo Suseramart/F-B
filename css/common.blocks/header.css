@@ -1,0 +1,155 @@
+.header {
+    background: var(--background);
+    padding: 20px 0;
+}
+
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+
+.logo {
+    z-index: 101;
+}
+
+.logo__icon {
+    width: 65px;
+    height: 20px;
+}
+
+.nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: -100%;
+    bottom: 100%;
+    width: 100%;
+    height: 100%;
+    /* max-width: 515px;
+     */
+    padding-top: 65px;
+    transition: top 0.4s, bottom 0.4s;
+    background-color: var(--background);
+    z-index: 100;
+}
+
+.nav_active {
+    top: 0;
+    bottom: 0;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__item {}
+
+.nav__link {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 34px;
+}
+
+.header__icons {
+    max-width: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.header__btn-icon {}
+
+.header__icon {
+    width: 24px;
+    height: 24px;
+}
+
+.burger {
+    position: relative;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    z-index: 100;
+
+
+
+
+
+}
+
+.burger__line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--white);
+    transition: transform 0.4s, top 0.4s, bottom 0.4s;
+}
+
+.burger__line_top {
+    top: 0;
+
+}
+
+.burger__line_center {
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.burger__line_bottom {
+    bottom: 0;
+}
+
+.burger_active .burger__line_top {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.burger_active .burger__line_center {
+    scale: 0;
+}
+
+.burger_active .burger__line_bottom {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+
+@media (min-width: 768px) {
+    .nav {
+        position: static;
+        padding: 0;
+        max-width: 515px;
+        background-color: transparent;
+
+    }
+
+    .nav__list {
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .nav__link {
+        font-size: 16px;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .header__icons {
+        max-width: 100px;
+    }
+}

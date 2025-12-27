@@ -1,0 +1,27 @@
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.title {
+    font-family: var(--second-family);
+    font-style: italic;
+    font-weight: 700;
+    font-size: clamp(1.75rem, calc(1.393rem + 1.786vw), 3rem);
+    /* min: 28px, max: 48px */
+    line-height: 100%;
+    color: var(--white);
+}
+
+.text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--white);
+}
+
+.button {
+    
+}
