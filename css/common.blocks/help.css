@@ -24,7 +24,7 @@
 }
 
 .help__text {
-    min-width: 825px;
+    max-width: 825px;
     margin-bottom: 25px;
 }
 
